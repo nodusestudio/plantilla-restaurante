@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante - Sabores que cuentan una historia</title>
+    <link rel="stylesheet" href="restaurante.css">
+    <!-- Google Fonts para tipografías elegantes -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- HEADER / NAVEGACIÓN -->
+    <!-- Puedes cambiar el nombre del restaurante aquí -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="logo">
+                    <h2>Bella Vista</h2> <!-- CAMBIAR: Nombre del restaurante -->
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#menu">Menú</a></li>
+                    <li><a href="#galeria">Galería</a></li>
+                    <li><a href="#reservas">Reservas</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+                <div class="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <!-- CAMBIAR: Imagen de fondo en CSS (--hero-bg-image) -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Sabores que cuentan una historia</h1> <!-- CAMBIAR: Título principal -->
+            <p class="hero-subtitle">Descubre una experiencia culinaria única donde cada plato es una obra de arte</p> <!-- CAMBIAR: Subtítulo -->
+            <a href="#reservas" class="btn-primary">
+                <i class="fas fa-utensils"></i>
+                Reservar Mesa
+            </a>
+        </div>
+        <div class="hero-overlay"></div>
+    </section>
+
+    <!-- SECCIÓN ACERCA DE -->
+    <section class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Nuestra Historia</h2> <!-- CAMBIAR: Título de la sección -->
+                    <p>Desde 1985, hemos sido el hogar de la auténtica cocina mediterránea en el corazón de la ciudad. Nuestros chefs combinan técnicas tradicionales con ingredientes frescos locales para crear experiencias gastronómicas inolvidables.</p> <!-- CAMBIAR: Historia del restaurante -->
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-leaf"></i>
+                            <span>Ingredientes Frescos</span> <!-- CAMBIAR: Características -->
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-award"></i>
+                            <span>Premiados</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-heart"></i>
+                            <span>Hecho con Amor</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <!-- CAMBIAR: Imagen del chef o restaurante -->
+                    <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Nuestro chef">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MENÚ DIGITAL -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nuestro Menú</h2> <!-- CAMBIAR: Título del menú -->
+                <p>Explora nuestra selección de platos cuidadosamente elaborados</p>
+            </div>
+
+            <!-- Categorías del Menú -->
+            <div class="menu-categories">
+                <button class="menu-category active" data-category="entradas">Entradas</button>
+                <button class="menu-category" data-category="principales">Platos Principales</button>
+                <button class="menu-category" data-category="postres">Postres</button>
+                <button class="menu-category" data-category="bebidas">Bebidas</button>
+            </div>
+
+            <!-- ENTRADAS -->
+            <div class="menu-items active" id="entradas">
+                <div class="menu-card">
+                    <img src="https://images.unsplash.com/photo-1541718103935-c2e1ba2a3ad3?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Bruschetta">
+                    <div class="menu-card-content">
+                        <h3>Bruschetta Artesanal</h3> <!-- CAMBIAR: Nombre del plato -->
+                        <p>Pan tostado con tomates frescos, albahaca y aceite de oliva extra virgen</p> <!-- CAMBIAR: Descripción -->
+                        <span class="price">$12.99</span> <!-- CAMBIAR: Precio -->
+                    </div>
+                </div>
+                
+                <div class="menu-card">
+                    <img src="https://images.unsplash.com/photo-1551782450-a2132b4ba21d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Ensalada César">
+                    <div class="menu-card-content">
+                        <h3>Ensalada César Gourmet</h3>
+                        <p>Lechuga romana, crutones caseros, parmesano y aderezo César tradicional</p>
+                        <span class="price">$14.50</span>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Carpaccio">
+                    <div class="menu-card-content">
+                        <h3>Carpaccio de Res</h3>
+                        <p>Finas láminas de res con rúcula, parmesano y vinagreta de limón</p>
+                        <span class="price">$18.99</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PLATOS PRINCIPALES -->
+            <div class="menu-items" id="principales">
+                <div class="menu-card">
+                    <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Salmón">
+                    <div class="menu-card-content">
+                        <h3>Salmón a la Parrilla</h3>
+                        <p>Salmón fresco con vegetales asados y salsa de eneldo</p>
+                        <span class="price">$28.99</span>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <img src="https://images.unsplash.com/photo-1544025162-d76694265947?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Risotto">
+                    <div class="menu-card-content">
+                        <h3>Risotto de Hongos</h3>
+                        <p>Arroz arborio con mezcla de hongos silvestres y trufa</p>
+                        <span class="price">$24.50</span>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <img src="https://images.unsplash.com/photo-1558030006-450675393462?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Filete">
+                    <div class="menu-card-content">
+                        <h3>Filete de Res Premium</h3>
+                        <p>Corte premium acompañado de papas gratinadas y vegetales</p>
+                        <span class="price">$35.99</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- POSTRES -->
+            <div class="menu-items" id="postres">
+                <div class="menu-card">
+                    <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Tiramisú">
+                    <div class="menu-card-content">
+                        <h3>Tiramisú Casero</h3>
+                        <p>El clásico italiano con mascarpone, café y cacao</p>
+                        <span class="price">$8.99</span>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Cheesecake">
+                    <div class="menu-card-content">
+                        <h3>Cheesecake de Frutos Rojos</h3>
+                        <p>Cremoso cheesecake con salsa de frutos del bosque</p>
+                        <span class="price">$9.50</span>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <img src="https://images.unsplash.com/photo-1578775887804-699de7086ff9?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Gelato">
+                    <div class="menu-card-content">
+                        <h3>Gelato Artesanal</h3>
+                        <p>Variedad de sabores hechos diariamente en nuestro local</p>
+                        <span class="price">$6.99</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BEBIDAS -->
+            <div class="menu-items" id="bebidas">
+                <div class="menu-card">
+                    <img src="https://images.unsplash.com/photo-1586370434639-0fe43b2d32d6?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Vino">
+                    <div class="menu-card-content">
+                        <h3>Vino de la Casa</h3>
+                        <p>Selección especial de vinos tintos y blancos</p>
+                        <span class="price">$8.00</span>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Cóctel">
+                    <div class="menu-card-content">
+                        <h3>Cócteles Signature</h3>
+                        <p>Creaciones exclusivas de nuestro bartender</p>
+                        <span class="price">$12.00</span>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Café">
+                    <div class="menu-card-content">
+                        <h3>Café Espresso</h3>
+                        <p>Café premium de origen colombiano</p>
+                        <span class="price">$4.50</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALERÍA VISUAL -->
+    <section id="galeria" class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2>Galería</h2>
+                <p>Un vistazo a nuestros mejores momentos</p>
+            </div>
+            
+            <!-- CAMBIAR: URLs de las imágenes de los platos -->
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Plato gourmet">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Ambiente del restaurante">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1578474846511-04ba529f0b88?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Chef cocinando">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1551218372-a8789b81b253?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Plato especial">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Bebidas">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1428515613728-6b4607e44363?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Postres">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN DE RESERVAS -->
+    <section id="reservas" class="reservations">
+        <div class="container">
+            <div class="reservations-content">
+                <div class="reservations-info">
+                    <h2>Reserva tu Mesa</h2>
+                    <p>Garantiza tu lugar en nuestra experiencia culinaria. Te confirmamos tu reserva al instante.</p>
+                    
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+1 (555) 123-4567</span> <!-- CAMBIAR: Teléfono -->
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>reservas@bellavista.com</span> <!-- CAMBIAR: Email -->
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>123 Calle Principal, Ciudad</span> <!-- CAMBIAR: Dirección -->
+                        </div>
+                    </div>
+
+                    <div class="hours">
+                        <h3>Horarios</h3> <!-- CAMBIAR: Horarios de atención -->
+                        <div class="hours-item">
+                            <span>Lunes - Jueves:</span>
+                            <span>12:00 PM - 10:00 PM</span>
+                        </div>
+                        <div class="hours-item">
+                            <span>Viernes - Sábado:</span>
+                            <span>12:00 PM - 11:00 PM</span>
+                        </div>
+                        <div class="hours-item">
+                            <span>Domingo:</span>
+                            <span>12:00 PM - 9:00 PM</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reservation-form">
+                    <form class="form">
+                        <div class="form-group">
+                            <label for="nombre">Nombre completo</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="telefono">Teléfono</label>
+                            <input type="tel" id="telefono" name="telefono" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="fecha">Fecha</label>
+                                <input type="date" id="fecha" name="fecha" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="hora">Hora</label>
+                                <select id="hora" name="hora" required>
+                                    <option value="">Seleccionar hora</option>
+                                    <option value="12:00">12:00 PM</option>
+                                    <option value="12:30">12:30 PM</option>
+                                    <option value="13:00">1:00 PM</option>
+                                    <option value="13:30">1:30 PM</option>
+                                    <option value="14:00">2:00 PM</option>
+                                    <option value="19:00">7:00 PM</option>
+                                    <option value="19:30">7:30 PM</option>
+                                    <option value="20:00">8:00 PM</option>
+                                    <option value="20:30">8:30 PM</option>
+                                    <option value="21:00">9:00 PM</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="personas">Número de personas</label>
+                            <select id="personas" name="personas" required>
+                                <option value="">Seleccionar</option>
+                                <option value="1">1 persona</option>
+                                <option value="2">2 personas</option>
+                                <option value="3">3 personas</option>
+                                <option value="4">4 personas</option>
+                                <option value="5">5 personas</option>
+                                <option value="6">6 personas</option>
+                                <option value="7">7 personas</option>
+                                <option value="8">8 personas</option>
+                                <option value="mas">Más de 8</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="comentarios">Comentarios especiales (opcional)</label>
+                            <textarea id="comentarios" name="comentarios" rows="3" placeholder="Ocasión especial, alergias, preferencias..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn-primary">
+                            <i class="fas fa-calendar-check"></i>
+                            Confirmar Reserva
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="contacto" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Bella Vista</h3> <!-- CAMBIAR: Nombre del restaurante -->
+                    <p>Creando experiencias gastronómicas inolvidables desde 1985.</p> <!-- CAMBIAR: Descripción -->
+                    <div class="social-links">
+                        <!-- CAMBIAR: Enlaces a redes sociales -->
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+1 (555) 123-4567</span> <!-- CAMBIAR: Teléfono -->
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@bellavista.com</span> <!-- CAMBIAR: Email -->
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>123 Calle Principal, Ciudad</span> <!-- CAMBIAR: Dirección -->
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Horarios</h4>
+                    <div class="hours-item">
+                        <span>Lun - Jue: 12:00 PM - 10:00 PM</span>
+                    </div>
+                    <div class="hours-item">
+                        <span>Vie - Sáb: 12:00 PM - 11:00 PM</span>
+                    </div>
+                    <div class="hours-item">
+                        <span>Domingo: 12:00 PM - 9:00 PM</span>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <p>Recibe nuestras ofertas especiales</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Tu email" required>
+                        <button type="submit">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Bella Vista. Todos los derechos reservados.</p> <!-- CAMBIAR: Año y nombre -->
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript para funcionalidad -->
+    <script>
+        // Menú móvil
+        const navToggle = document.querySelector('.nav-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            navToggle.classList.toggle('active');
+        });
+
+        // Cerrar menú móvil al hacer click en un enlace
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                navToggle.classList.remove('active');
+            });
+        });
+
+        // Filtros del menú
+        const menuCategories = document.querySelectorAll('.menu-category');
+        const menuItems = document.querySelectorAll('.menu-items');
+
+        menuCategories.forEach(category => {
+            category.addEventListener('click', () => {
+                // Remover active de todas las categorías
+                menuCategories.forEach(cat => cat.classList.remove('active'));
+                // Agregar active a la categoría seleccionada
+                category.classList.add('active');
+
+                // Ocultar todos los elementos del menú
+                menuItems.forEach(items => items.classList.remove('active'));
+                // Mostrar los elementos de la categoría seleccionada
+                const targetCategory = category.getAttribute('data-category');
+                document.getElementById(targetCategory).classList.add('active');
+            });
+        });
+
+        // Scroll suave
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Formulario de reservas
+        const reservationForm = document.querySelector('.form');
+        reservationForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Aquí puedes agregar la lógica para enviar la reserva
+            // Por ahora, solo mostramos un mensaje de confirmación
+            
+            const nombre = document.getElementById('nombre').value;
+            const fecha = document.getElementById('fecha').value;
+            const hora = document.getElementById('hora').value;
+            const personas = document.getElementById('personas').value;
+            
+            alert(`¡Gracias ${nombre}! Tu reserva para ${personas} persona(s) el ${fecha} a las ${hora} ha sido recibida. Te contactaremos pronto para confirmar.`);
+            
+            // Limpiar formulario
+            this.reset();
+        });
+
+        // Establecer fecha mínima para el campo de fecha (hoy)
+        document.getElementById('fecha').min = new Date().toISOString().split('T')[0];
+
+        // Header transparente que cambia al hacer scroll
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>
