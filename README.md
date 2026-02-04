@@ -55,7 +55,7 @@ Edita las variables en `restaurante.css`:
 
 ```
 plantilla-restaurante/
-├── template-restaurante.html    # Archivo HTML principal
+├── index.html                  # Archivo HTML principal
 ├── restaurante.css             # Estilos CSS
 ├── README.md                   # Documentación
 └── assets/                     # (opcional) Para imágenes locales
@@ -87,12 +87,12 @@ plantilla-restaurante/
    ```
 
 2. **Personaliza el contenido:**
-   - Edita `template-restaurante.html` para cambiar textos e imágenes
+   - Edita `index.html` para cambiar textos e imágenes
    - Busca los comentarios `<!-- CAMBIAR: -->` para encontrar elementos personalizables
    - Modifica las variables CSS en `restaurante.css` para colores y fuentes
 
 3. **Prueba local:**
-   - Abre `template-restaurante.html` en tu navegador
+   - Abre `index.html` en tu navegador
    - O usa un servidor local como Live Server en VS Code
 
 4. **Deploy:**
